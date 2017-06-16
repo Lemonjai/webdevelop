@@ -6,7 +6,7 @@ Creating a teaching platform for people whom wants to learn web development. Thi
 
 * Admin
   * Can create new roles and manage existing accounts
-  
+
 * Publisher
   * Can push new content
   * Can create sections
@@ -18,7 +18,8 @@ Creating a teaching platform for people whom wants to learn web development. Thi
 ### Work Log:
 
 * June 16, 2017
-  * Add Student model in Devise and created the resource for active admin
+  * Add Student model in Devise and created the resource for Active Admin
+  * Removed the Customer from Devise and Active Admin
 
 * June 15,2017 
   * Add the devise gem, created four user models Admin, Publisher, Developer and Customer

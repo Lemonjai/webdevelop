@@ -5,7 +5,6 @@ Rails.application.routes.draw do
   root 'home#index'
 
   # Created the user model using devise
-  devise_for :customers
   devise_for :developer_users, ActiveAdmin::Devise.config.merge({path: '/develop'})
   devise_for :publisher_users, ActiveAdmin::Devise.config.merge({path: '/publish'})
   devise_for :admin_users, ActiveAdmin::Devise.config
