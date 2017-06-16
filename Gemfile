@@ -5,7 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
+ruby "2.4.0"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.1'
 # Use postgresql as the database for Active Record
@@ -35,6 +35,7 @@ gem 'devise'
 gem 'active_admin_editor', github: 'ejholmes/active_admin_editor'
 gem 'font-awesome-rails'
 gem 'autoprefixer-rails'
+gem 'rails_12factor'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
