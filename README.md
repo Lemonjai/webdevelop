@@ -10,3 +10,4 @@ Work Log:
   * Updated the CMS dashboard to have all the users
   * CMS Dashboard accessible only through Admin, Publisher & Developer
   * CMS accounts can be access to their specific roles
+  * Deployed to Heroku
