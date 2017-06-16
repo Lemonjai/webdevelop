@@ -1,24 +1,5 @@
-# README
+# WEBDEVELOPER.IO README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Creating a teaching platform for people whom wants to learn web development. This application uses a custom CMS to serve the learning matters and able to push things dynamically.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Work Log:
