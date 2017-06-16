@@ -37,6 +37,8 @@ gem 'font-awesome-rails'
 gem 'autoprefixer-rails'
 gem 'rails_12factor'
 
+gem 'bundler', '~> 1.15.1'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
