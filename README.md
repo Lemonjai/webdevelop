@@ -2,7 +2,23 @@
 
 Creating a teaching platform for people whom wants to learn web development. This application uses a custom CMS to serve the learning matters and able to push things dynamically.
 
-Work Log:
+### User Roles:
+
+* Admin
+  * Can create new roles and manage existing accounts
+  
+* Publisher
+  * Can push new content
+  * Can create sections
+
+* Developer
+  * Can create different templates
+  * Can create different sections
+
+### Work Log:
+
+* June 16, 2017
+  * Add Student model in Devise and created the resource for active admin
 
 * June 15,2017 
   * Add the devise gem, created four user models Admin, Publisher, Developer and Customer

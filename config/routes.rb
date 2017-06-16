@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :students
   # Rooting the home controller as our index
   root 'home#index'
 
