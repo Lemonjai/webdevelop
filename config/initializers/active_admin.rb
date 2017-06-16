@@ -4,7 +4,7 @@ ActiveAdmin.setup do |config|
   # Set the title that is displayed on the main layout
   # for each of the active admin pages.
   #
-  config.site_title = "Webdevelop"
+  config.site_title = "WebDevelop.io"
 
   # Set the link url for the title. For example, to take
   # users to your main site. Defaults to no link.
@@ -54,7 +54,7 @@ ActiveAdmin.setup do |config|
   #
   # This setting changes the method which Active Admin calls
   # within the application controller.
-  # config.authentication_method = :authenticate_admin_user!
+  config.authentication_method = :authenticate_admin_user!
 
   # == User Authorization
   #
@@ -86,7 +86,7 @@ ActiveAdmin.setup do |config|
   #
   # This setting changes the method which Active Admin calls
   # (within the application controller) to return the currently logged in user.
-  # config.current_user_method = :current_admin_user
+  config.current_user_method = :current_admin_user
 
   # == Logging Out
   #
@@ -119,7 +119,7 @@ ActiveAdmin.setup do |config|
   # This allows your users to comment on any resource registered with Active Admin.
   #
   # You can completely disable comments:
-  # config.comments = false
+  config.comments = false
   #
   # You can change the name under which comments are registered:
   # config.comments_registration_name = 'AdminComment'
@@ -129,7 +129,7 @@ ActiveAdmin.setup do |config|
   # config.comments_order = 'created_at ASC'
   #
   # You can disable the menu item for the comments index page:
-  # config.comments_menu = false
+  config.comments_menu = false
   #
   # You can customize the comment menu:
   # config.comments_menu = { parent: 'Admin', priority: 1 }
@@ -237,7 +237,25 @@ ActiveAdmin.setup do |config|
   #
   # To disable/customize for the :admin namespace:
   #
-  #   config.namespace :admin do |admin|
+    config.load_paths = [File.join(Rails.root,'app','admin'),File.join(Rails.root,'app','publisher'),File.join(Rails.root,'app','developer')]
+
+    config.namespace :admin do |admin|
+      admin.authentication_method = :authenticate_admin_user!
+      admin.current_user_method = :current_admin_user
+      admin.logout_link_path = :destroy_admin_user_session_path
+    end
+
+    config.namespace :publisher do |publisher|
+      publisher.authentication_method = :authenticate_admin_user!
+      publisher.current_user_method = :current_admin_user
+      publisher.logout_link_path = :destroy_admin_user_session_path
+    end
+
+    config.namespace :developer do |developer|
+      developer.authentication_method = :authenticate_admin_user!
+      developer.current_user_method = :current_admin_user
+      developer.logout_link_path = :destroy_admin_user_session_path
+    end
   #
   #     # Disable the links entirely
   #     admin.download_links = false
