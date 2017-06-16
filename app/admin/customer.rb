@@ -34,6 +34,7 @@ permit_params :email, :password, :password_confirmation
       f.input :password
       f.input :password_confirmation
     end
+    f.actions
   end
 
 end
