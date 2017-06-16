@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  ActiveAdmin.routes(self)
   # Created the user model using devise
   devise_for :customers
   devise_for :developer_users

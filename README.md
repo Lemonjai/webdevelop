@@ -5,3 +5,4 @@ Creating a teaching platform for people whom wants to learn web development. Thi
 Work Log:
 
 * June 15,2017 - Add the devise gem, created four user models Admin, Publisher, Developer and Customer
+               - Add the activeadmin gem, created the resources for Admin, Publisher, Developer and Customer
